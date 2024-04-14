@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -11.960
+TNS   : -989.659
+
+Type  : Slow 1200mV 85C Model Setup 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -11.789
+TNS   : -974.353
+
+Type  : Slow 1200mV 85C Model Setup 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.121
+TNS   : -2.130
+
+Type  : Slow 1200mV 85C Model Hold 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : 1.680
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : 1.717
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.588
+TNS   : -2.350
+
+Type  : Slow 1200mV 85C Model Removal 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.363
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -1.285
+TNS   : -164.480
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -1.285
+TNS   : -164.480
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK'
+Slack : 9.891
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -10.634
+TNS   : -884.865
+
+Type  : Slow 1200mV 0C Model Setup 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -10.547
+TNS   : -881.383
+
+Type  : Slow 1200mV 0C Model Setup 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.054
+TNS   : -2.025
+
+Type  : Slow 1200mV 0C Model Hold 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : 1.605
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : 1.635
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.370
+TNS   : -1.474
+
+Type  : Slow 1200mV 0C Model Removal 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 1.232
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -1.285
+TNS   : -164.480
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -1.285
+TNS   : -164.480
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 9.887
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -5.960
+TNS   : -485.513
+
+Type  : Fast 1200mV 0C Model Setup 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -5.863
+TNS   : -473.345
+
+Type  : Fast 1200mV 0C Model Setup 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.488
+TNS   : -0.913
+
+Type  : Fast 1200mV 0C Model Hold 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.041
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : 0.662
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : 0.666
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.659
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Fine_Counter:sc1|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -1.000
+TNS   : -128.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Fine_Counter:sc2|Synchronizer:sc6|FFD:sc2|Q'
+Slack : -1.000
+TNS   : -128.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sc0|sc0|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK'
+Slack : 9.574
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,40 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+entity TimeFinerSystem is
+	
+	port(
+	
+	RST,CLK 				: in std_logic;	
+	A, B 					: in std_logic;
+	start, Hit, init  : in std_logic;
+	E						: OUT STD_LOGIC_VECTOR(7 downto 0);
+	Cout					: out std_logic
+	
+	);	
+	
+end TimeFinerSystem;
+
+architecture fsm of TimeFinerSystem is
+
+
+component Fine_Counter is
+   generic (
+    N : positive := 128   -- Change the default value as needed
+   );	
+	port (
+	
+	RST, CLK, Ones, Zeros, Start, Hit   : in  	std_logic;
+	E      		            				: OUT STD_LOGIC_VECTOR(7 downto 0);
+	Cout  : out STD_LOGIC
+   
+   );	
+	
+end component;	
+
+
+begin  
+	
+	sc0 : Fine_Counter port map(RST, CLK, B, A, start, Hit, E, Cout);
+		
+end fsm;

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 14 15:32:18 2024
+Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Standard Edition
+Revision Name : TDC
+Top-level Entity Name : TDC
+Family : Cyclone IV E
+Total logic elements : 1,540
+    Total combinational functions : 1,278
+    Dedicated logic registers : 522
+Total registers : 522
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

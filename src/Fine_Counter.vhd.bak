@@ -1,0 +1,77 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+entity Fine_Counter is
+   generic (
+    N : positive := 128   -- Change the default value as needed
+   );	
+	port (
+	
+	RST, CLK, Ones, Zeros, Start, Hit   	: in  	std_logic; --- init, fin
+	E      		            					: OUT STD_LOGIC_VECTOR(7 downto 0);
+	Cout  : out STD_LOGIC
+   
+   );
+
+end Fine_Counter;
+
+architecture simple of Fine_Counter is
+
+component Carry_Chain_N is
+  generic (
+    N : positive := 128   -- Change the default value as needed
+  );
+  Port (
+    A    : in STD_LOGIC_VECTOR(N-1 downto 0);
+    B    : in STD_LOGIC_VECTOR(N-1 downto 0);
+    Cin  : in STD_LOGIC;
+    S    : out STD_LOGIC_VECTOR(N-1 downto 0);
+	 Cout  : out STD_LOGIC
+  );
+end component;
+
+component Registro_N is
+  generic (
+    N : positive := 128   -- Change the default value as needed
+  );
+  Port (
+    Hit : in STD_LOGIC;
+    Reset : in STD_LOGIC;
+    D : in STD_LOGIC_VECTOR(N-1 downto 0);
+    Q : out STD_LOGIC_VECTOR(N-1 downto 0)
+  ); 
+end component;
+
+component Zero_Count is
+    generic (
+		N : natural := 128; 
+		M : natural	:= 8 
+    );
+    port (
+		RST	  	  : in STD_LOGIC;
+        vector_in : in  std_logic_vector(N-1 downto 0);
+        count_out : out std_logic_vector(M-1 downto 0)
+    );
+end component;
+
+component Shift_Left is
+    Generic (N : integer := 128); -- Define the number of bits as a generic
+    Port ( CLK : in STD_LOGIC;
+           RST : in STD_LOGIC;
+           L : in STD_LOGIC;
+           Q : out STD_LOGIC_VECTOR(N-1 downto 0));
+end component;
+
+   	signal Q       : STD_LOGIC_VECTOR(N-1 downto 0);
+   	signal Q_reg  : STD_LOGIC_VECTOR(N-1 downto 0);
+	signal A,B  : STD_LOGIC_VECTOR(N-1 downto 0);
+
+begin
+	
+	sc0 : Shift_Left port map(CLK, RST, Zeros, A);
+	sc1 : Shift_Left port map(CLK, RST, Ones, B);
+   sc2 : Carry_Chain_N port map(A, B, Start, Q, Cout);
+	sc3 : Registro_N port map(Hit, RST, Q, Q_reg);
+	sc4 : Zero_Count port map(RST,Q_reg, E);
+	
+end simple;
